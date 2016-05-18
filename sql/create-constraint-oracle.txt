@@ -1,0 +1,25 @@
+alter table STUDENT add primary key (STUDENT_NO)
+/
+alter table CLASS add primary key (CLASS_NO)
+/
+
+alter table COURSES add primary key (COURSES_NO)
+/
+
+alter table RESULT add primary key (STUDENT_NO, COURSES_NO)
+/
+
+alter table RESULT add foreign key (STUDENT_NO) references STUDENT (STUDENT_NO)
+/
+
+alter table RESULT add foreign key (COURSES_NO) references COURSES (COURSES_NO)
+/
+
+alter table STUDENTCLASS add primary key (STUDENT_NO, CLASS_NO)
+/
+
+alter table STUDENTCLASS add foreign key (STUDENT_NO) references STUDENT (STUDENT_NO)
+/
+
+alter table STUDENTCLASS add foreign key (CLASS_NO) references CLASS (CLASS_NO)
+/

@@ -1,0 +1,27 @@
+insert into class values('010707', 'wang-gang');
+insert into class values('010706', 'liao-manyuan');
+insert into class values('010704', 'yu-guobao');
+insert into class values('010705', 'teacher1');
+insert into class values('010702', 'master');
+
+insert into courses values('01', '高等数学', '5');
+insert into courses values('02', '计算机图形学', '4');
+insert into courses values('03', '数据结构', '4');
+insert into courses values('04', '计算机网络', '3');
+
+insert into student values('01070709', '赵明宇', '25');
+insert into student values('01070720', '孙宁', '24');
+insert into student values('01070705', '任哲', '26');
+
+insert into studentclass values('01070709','010707');
+insert into studentclass values('01070720','010707');
+insert into studentclass values('01070705','010707');
+
+insert into result values('01070720', '01', '59');
+insert into result values('01070720', '02', '67');
+insert into result values('01070720', '04', '89');
+
+insert into result values('01070709','01','100');
+insert into result values('01070709','03','79');
+insert into result values('01070709','02','61');
+insert into result values('01070709','04','99');
